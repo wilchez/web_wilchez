@@ -1,0 +1,165 @@
+/* Reset */
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+/*  Body  */
+body{
+	background: url(../images/bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: Helvetica,Arial;
+	color: #fff;
+}
+
+header{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+section{
+	margin: 0 auto;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1024px;
+	height: auto;
+}
+.container figure {
+	margin: 10% auto 0;
+	width: 180px;
+	height: auto;
+}
+
+.container figure .logo {
+	margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	height: auto;
+}
+.container figure .logo img{
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+.campos-log {
+	margin: 30px auto 5px;
+	text-align: center;
+}
+#infoperfil img{
+	border: 5px solid #FFF;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.container figure #infoperfil {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	height: auto;
+}
+
+#infopersonal{
+	display: inline-block;
+	text-align: left;
+	width: 75%;
+}
+
+h1{
+	color: #fff;
+	font-size: 12px;
+}
+a {
+	color: #fff;
+	
+}
+
+figure img{
+	height: auto;
+	width: 100%;
+}
+
+/* Botones */
+
+.boton {
+	display: inline-block;
+	vertical-align: center;
+	color: #fff;
+	background-color:#35a6db;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-width: 0;
+	text-indent:0px;
+	color:#ffffff;
+	font-size: 16px;
+	height:40px;
+	width:80px;
+	text-decoration:none;
+	text-align:center;
+	cursor: pointer;
+}
+
+.boton:hover {
+	background-color:#4db4df;
+}
+
+.mensaje{
+	display: inline-block;
+	width: 50%;
+	height: 120px;
+	padding: 10px;
+	background-color: #EDEDED;
+	border-width: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-family: Arial, serif;
+	font-weight: 300;
+	font-size: 22px;
+	color: #3E4651;
+
+}
+.comentador{
+	display: inline-block;
+	width: 20%;
+}
+
+.fecha_comentario{
+	font-size: 12px;
+	margin-top: 2%;
+	padding: 2%;
+
+	vertical-align: 
+
+}	
+.likes{
+	background-color: #fff;
+	/*para Firefox*/
+	-moz-border-radius: 5px 5px 5px 5px;
+	/*para Safari y Chrome*/
+	-webkit-border-radius: 5px 5px 5px 5px;
+	/* para Opera */
+	border-radius: 5px 5px 5px 5px;
+	display: inline-block;
+	font-family: icomoon;
+	font-size: 13px;
+	margin-left: 70%;
+	padding: 5px;
+	text-shadow:0px 0px #896233;
+}
+.voto{
+	color: #3c2014;
+	text-decoration: none;
+}
+.voto:hover{
+	color: #957958;
+	text-decoration: none;	
+}
+
+
