@@ -1,0 +1,163 @@
+/* */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-style: normal;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+a {
+	color: white;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*body*/
+body {
+    background: url(../images/bg.jpg) no-repeat #fff;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-weight: 300;
+}
+/*header*/
+header {
+	margin: 0 auto;
+	width: 70%;
+	height: auto;	
+}
+#logo {
+	display: inline-block;
+	/*alineo todos los elementos a la mitad se le aplica al mas grande
+	si le pongo top a uno se aliena ocnel top de los demas*/
+	vertical-align: middle;
+	width: 300px;
+	height: auto;
+}
+#logo img{
+	margin: 10% auto;
+	height: auto;
+}
+#login {
+	margin: 0% auto;
+	display: inline-block;
+	vertical-align: middle;
+	height: auto;
+}
+#login form p{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+#login form input[name="enviar"] {
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	background-color: black;
+	color: white;
+	padding: 4px 8px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+button{
+	display: inline-block;
+	vertical-align: middle;
+	border: none;
+	background-color: black;
+	color: white;	
+	text-align: center;
+	padding: 4px 8px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+/*nav*/
+nav {
+    background: url(../images/bg-nav.png) repeat-x;
+	text-align: center;
+	margin: 2% auto;
+}
+	nav ul li {
+		background-color: black;
+		display: inline-block;
+		color: white;
+		text-align: center;
+		padding: 4px 8px;
+		-webkit-border-radius: 5px 5px 5px 5px;
+	}
+
+/* section */
+section{
+	background-color: rgba(0,0,0,0.5);
+	margin: 0 auto;
+	width: 70%;
+	height: auto;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+#contenedor{
+	margin: 10% auto;
+	width: 80%;
+	height: 500px;
+}
+article{
+	display: inline-block;
+	vertical-align: top;
+	background-color: white;
+	margin: 3% 3%;
+	padding: 2% 2%;
+	width: 150px;
+	height: auto;
+	-webkit-border-radius: 5px 5px 5px 5px;
+
+}
+article p{
+	width: 150px;
+	text-align: center;
+}
+article img{
+	margin: 0% 80%;
+	width: 100px;
+	height: auto;
+}
+/*footer*/
+.mifooter{
+	margin: 0 auto;
+}
+.mifooter p{
+	text-align: center;
+	color: black;
+}
+ul{
+	list-style: none;
+}
+
+ul.destacado{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+ul.destacado li{
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding-top: 10px;
+}
+table {
+	font-family: 'Arial', sans-serif;
+	color:rgb(255, 255, 255);
+	display: block;
+	font-size: 1em;
+	font-weight: 100;
+	line-height: 1.8em;
+	text-align: center;
+	margin: 0 auto;
+	text-shadow: 0px 1px 0px rgba(255, 250, 250, 0.09);	
+}
