@@ -1,8 +1,8 @@
 <?php
 
-	include_once("includes/database.php");
+  include_once("includes/database.php");
 
-	if($_POST){
+  if($_POST){
       $type = $_POST["typeSite"];
 
       $result=mysqli_query($con,"SELECT nombre, latitud, longitud, id FROM sitios WHERE tipo='$type'");
@@ -20,10 +20,11 @@
         
       //}
 
-      mysql_close($con);
+      //mysql_close($con);
 
-      echo json_encode($list);
+     echo json_encode($list);
+    //echo $list;
   }else{
-  	echo "nada";
+    echo "nada";
   }
 ?>

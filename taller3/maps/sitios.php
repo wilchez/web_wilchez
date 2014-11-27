@@ -6,7 +6,7 @@
       <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
       <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
       <style>
-	body{background-color:#000;}
+  body{background-color:#000;}
       .content{width:800px;margin:auto;}
       #div1 {width:226px;height:70px;border:1px solid #aaaaaa;background-color:#fff;}
       .column_right{float: left; width: 226px; padding: 20px;}
@@ -30,7 +30,7 @@
 
         //print_r($list);
 
-        mysql_close($con);
+        //mysql_close($con);
 
         ?>
 
@@ -54,6 +54,9 @@
             var marker, i;
 
             for (i = 0; i < locations.length; i++) {
+        console.log(locations[i][0]);
+        console.log(+locations[i][1]);
+        console.log(locations[i][2]);
               marker = new google.maps.Marker({
                 position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                 map: map
@@ -91,6 +94,7 @@
             if(data=="drag3"){
               typeSite="hogares";
             }
+      console.log(typeSite);
 
             if(typeSite==""){
               alert("no se ha definido un tipo de sitio para buscar");
@@ -102,12 +106,13 @@
                       typeSite: typeSite,
                   },
                   success: function(data) {
-                      var locations = [data];
-                      //alert(locations.length);
+                      var locations = $.parseJSON(data);
+                      console.log(data);
                       if(locations.length < 1){
                         alert("No existe ningun dato");
                       }else{
                         //alert(data);
+            //console.log(locations[i][1]);
                         sitelocation(locations);
                         
                       }
